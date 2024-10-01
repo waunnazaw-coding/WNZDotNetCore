@@ -204,10 +204,31 @@ namespace WNZDotNetTraining.ConsoleApp
 
             int result = command.ExecuteNonQuery();  //output is interger . one time run output one integer
 
-            Console.WriteLine(result == 1 ? "Updating successfully!" : "Saving Fail"); //tenary operator
+            Console.WriteLine(result == 1 ? "Updating successfully!" : "Updating Fail"); //tenary operator
 
             sqlConnection.Close();
         }
 
+        public void Delete()
+        {
+            Console.Write("Blog Id => ");
+            string id = Console.ReadLine();
+
+            SqlConnection sqlConnection = new SqlConnection(_connectionString);
+
+            sqlConnection.Open();
+
+            string sqlQuery = @"DELETE FROM [dbo].[Tbl_Blog]
+                           WHERE BlogId = @BlogId";
+            SqlCommand command = new SqlCommand(sqlQuery, sqlConnection);
+            command.Parameters.AddWithValue("@BlogId", id);
+
+            int result = command.ExecuteNonQuery();
+            Console.WriteLine(result == 1 ? "Delete Successfully": "Delete Fail");
+
+
+            sqlConnection.Close();
+
+        }
     }
 }
