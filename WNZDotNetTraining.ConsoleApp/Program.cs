@@ -30,6 +30,7 @@ ADODotNet adoDotNetRun = new ADODotNet();
 //adoDotNetRun.Read(); 
 //adoDotNetRun.Create();
 //adoDotNetRun.Edit();
-adoDotNetRun.Update();
+//adoDotNetRun.Update();
+adoDotNetRun.Delete();
 
 Console.ReadKey();
