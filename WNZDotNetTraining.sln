@@ -3,12 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WNZDotNetTraining.ConsoleApp", "WNZDotNetTraining.ConsoleApp\WNZDotNetTraining.ConsoleApp.csproj", "{51F88378-C11D-499F-A46E-78B04A6E47C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WNZDotNetTraining.ConsoleApp", "WNZDotNetTraining.ConsoleApp\WNZDotNetTraining.ConsoleApp.csproj", "{51F88378-C11D-499F-A46E-78B04A6E47C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{FF9D1892-C4EB-4794-A7F9-6CB07DD98C51}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WNZDotNetCore.Database", "WNZDotNetCore.Database\WNZDotNetCore.Database.csproj", "{117576CD-504E-4DFC-8B5A-0964A1EFEC22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WNZDotNetTraining.ConsoleApp2", "WNZDotNetTraining.ConsoleApp2\WNZDotNetTraining.ConsoleApp2.csproj", "{61FFE4BD-6CD8-4AE2-8BB2-05E24016394D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WNZDotNetTraining.RestApi", "WNZDotNetTraining.RestApi\WNZDotNetTraining.RestApi.csproj", "{48F53C45-0EC7-44AA-A9CA-F721BE5A54F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +26,18 @@ Global
 		{51F88378-C11D-499F-A46E-78B04A6E47C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51F88378-C11D-499F-A46E-78B04A6E47C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51F88378-C11D-499F-A46E-78B04A6E47C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{117576CD-504E-4DFC-8B5A-0964A1EFEC22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{117576CD-504E-4DFC-8B5A-0964A1EFEC22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{117576CD-504E-4DFC-8B5A-0964A1EFEC22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{117576CD-504E-4DFC-8B5A-0964A1EFEC22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61FFE4BD-6CD8-4AE2-8BB2-05E24016394D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61FFE4BD-6CD8-4AE2-8BB2-05E24016394D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61FFE4BD-6CD8-4AE2-8BB2-05E24016394D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61FFE4BD-6CD8-4AE2-8BB2-05E24016394D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48F53C45-0EC7-44AA-A9CA-F721BE5A54F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48F53C45-0EC7-44AA-A9CA-F721BE5A54F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48F53C45-0EC7-44AA-A9CA-F721BE5A54F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48F53C45-0EC7-44AA-A9CA-F721BE5A54F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

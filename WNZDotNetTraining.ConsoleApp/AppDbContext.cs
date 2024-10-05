@@ -13,7 +13,7 @@ namespace WNZDotNetTraining.ConsoleApp
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
-            if (! optionsBuilder.IsConfigured)
+            if (!optionsBuilder.IsConfigured)
             {
                 string connectionString = " Data Source = . ; Initial Catalog = WNZDotNet; User ID = sa; Password = waunnazaw;TrustServerCertificate=true";
                 optionsBuilder.UseSqlServer(connectionString);

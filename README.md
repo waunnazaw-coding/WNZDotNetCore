@@ -28,3 +28,8 @@ SLH => Collin
 Bank + 5000
 
 WNZDotNetCore
+
+Server=sa;Database=WNZDotNet;Trusted_Connection=True;
+
+
+dotnet ef dbcontext scaffold "Server=.;Database=WNZDotNet;User Id=sa;Password=waunnazaw;TrustServerCertificate=True;" Microsoft.EntityFrameworkCore.SqlServer -o Models -c AppDbContext -f
