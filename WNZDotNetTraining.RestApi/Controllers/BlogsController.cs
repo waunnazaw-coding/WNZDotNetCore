@@ -10,7 +10,7 @@ namespace WNZDotNetTraining.RestApi.Controllers
     [ApiController]
     public class BlogsController : ControllerBase
     {
-        private readonly AppDbContext _db = new AppDbContext(); 
+        private readonly AppDbContext _db = new AppDbContext();
         [HttpGet]
         public IActionResult GetBlogs()
         {
@@ -21,7 +21,7 @@ namespace WNZDotNetTraining.RestApi.Controllers
             return Ok(lst);
         }
 
-        [HttpGet ("{id")]
+        [HttpGet("{id")]
         public IActionResult GetBlogs(int id)
         {
             var item = _db.TblBlogs.AsNoTracking().FirstOrDefault(x => x.BlogId == id);
@@ -43,7 +43,7 @@ namespace WNZDotNetTraining.RestApi.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult UpdateBlogs(int id , TblBlog blog)
+        public IActionResult UpdateBlogs(int id, TblBlog blog)
         {
             var item = _db.TblBlogs.AsNoTracking().FirstOrDefault(x => x.BlogId == id);
 
@@ -53,7 +53,7 @@ namespace WNZDotNetTraining.RestApi.Controllers
             }
 
             item.BlogTitle = blog.BlogTitle;
-            item.BlogAuthor = blog.BlogAuthor;  
+            item.BlogAuthor = blog.BlogAuthor;
             item.BlogContent = blog.BlogContent;
 
             _db.Entry(item).State = EntityState.Modified;
@@ -61,8 +61,8 @@ namespace WNZDotNetTraining.RestApi.Controllers
             return Ok(item);
         }
 
-        [HttpPatch ("{id}")]
-        public IActionResult PatchBlogs(int id , TblBlog blog)
+        [HttpPatch("{id}")]
+        public IActionResult PatchBlogs(int id, TblBlog blog)
         {
             var item = _db.TblBlogs.AsNoTracking().FirstOrDefault(x => x.BlogId == id);
 
